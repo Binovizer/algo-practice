@@ -26,6 +26,7 @@ hs_err_pid*
 
 ### IntelliJ IDEA ###
 .idea
+.idea/
 .DS_Store
 *.iws
 *.iml
