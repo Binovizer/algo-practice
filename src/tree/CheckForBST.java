@@ -10,10 +10,11 @@ import utils.AssortedMethods;
 public class CheckForBST {
 
     public static void main(String[] args) {
-        TreeNode tree = AssortedMethods.createTreeFromArray(new int[]{1,2,3,4,5});
+        TreeNode bst = TreeNode.createMinimalBST(new int[]{1, 2, 3, 4, 5, 6, 7, 8, 9});
+        bst.print();
 
         CheckForBST checkForBST = new CheckForBST();
-        boolean isBST = checkForBST.isBST(tree);
+        boolean isBST = checkForBST.isBST(bst);
         System.out.println("isBST = " + isBST);
     }
 

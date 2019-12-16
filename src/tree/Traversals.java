@@ -6,7 +6,7 @@ import java.util.Queue;
 public class Traversals {
 	public static void visit(TreeNode node) {
 		if (node != null) {
-			System.out.println(node.data);
+			System.out.print(node.data + " ");
 		}
 	}
 	
@@ -42,7 +42,7 @@ public class Traversals {
 		}
 		while(! q.isEmpty()){
 			TreeNode poll = q.poll();
-			System.out.print(poll.data + " ");
+			visit(poll);
 			if(poll.left != null){
 				q.add(poll.left);
 			}
@@ -57,7 +57,8 @@ public class Traversals {
 		
 		// We needed this code for other files, so check out the code in the library
 		TreeNode root = TreeNode.createMinimalBST(array);
-		inOrderTraversal(root);
+		root.print();
+		levelOrderTraversal(root);
 	}
 
 }
