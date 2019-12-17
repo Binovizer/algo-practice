@@ -1,6 +1,5 @@
 package tree;
 
-import com.sun.tools.hat.internal.model.Root;
 import utils.AssortedMethods;
 
 /**
@@ -13,7 +12,7 @@ public class RootToLeafPathSum {
     private static int sum = 0;
 
     public static void main(String[] args) {
-        TreeNode root = AssortedMethods.createTreeFromArray(new int[]{1,2,3,4,5});
+        TreeNode root = AssortedMethods.createTreeFromArray(new int[]{0,1,3,4,5,6});
         root.print();
 
 
@@ -31,7 +30,7 @@ public class RootToLeafPathSum {
         if(root == null){
             return;
         }
-        path += root.data+"";
+        path += String.valueOf(root.data);
         if(root.left == null && root.right == null){
             sum += Integer.parseInt(path);
         }
