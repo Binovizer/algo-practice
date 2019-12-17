@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="f635d0f8-903d-47c8-91fd-e4167906b55b" name="Default Changelist" comment="add : detect loop, check for bst, diamond pattern | gitignore update">
-      <change afterPath="$PROJECT_DIR$/src/graph/FindNoOfIslands.java" afterDir="false" />
+    <list default="true" id="f635d0f8-903d-47c8-91fd-e4167906b55b" name="Default Changelist" comment="graph | find no of islands">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/graph/FindNoOfIslands.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/graph/FindNoOfIslands.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/maths/Point.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/maths/Point.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -109,13 +110,21 @@
       <option name="project" value="LOCAL" />
       <updated>1576567138266</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="graph | find no of islands">
+      <created>1576576853226</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1576576853226</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="add : detect loop, check for bst, diamond pattern | gitignore update" />
     <MESSAGE value="tree | check if subtree" />
-    <option name="LAST_COMMIT_MESSAGE" value="tree | check if subtree" />
+    <MESSAGE value="graph | find no of islands" />
+    <option name="LAST_COMMIT_MESSAGE" value="graph | find no of islands" />
   </component>
   <component name="XDebuggerManager">
     <watches-manager>

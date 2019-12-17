@@ -67,7 +67,7 @@ public class FindNoOfIslands {
                 }
             }
         }
-        return new Point(-1, -1);
+        return Point.empty();
     }
 
 }

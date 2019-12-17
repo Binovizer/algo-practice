@@ -7,6 +7,8 @@ package maths;
  */
 public class Point {
 
+    private static Point emptyPoint;
+
     private int x;
     private int y;
 
@@ -29,5 +31,12 @@ public class Point {
 
     public void setY(int y) {
         this.y = y;
+    }
+
+    public static Point empty(){
+        if(emptyPoint == null){
+            emptyPoint = new Point(-1, -1);
+        }
+        return emptyPoint;
     }
 }
