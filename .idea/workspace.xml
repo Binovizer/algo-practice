@@ -2,8 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f635d0f8-903d-47c8-91fd-e4167906b55b" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/stack/StackUsingQueues.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/stack/StackUsingTwoQueues.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/graph/TopologicalSort.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/graph/TopologicalSort.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -38,7 +39,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.FindNoOfIslands">
+  <component name="RunManager" selected="Application.StackUsingTwoQueues">
     <configuration name="CheckSubtree" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="tree.CheckSubtree" />
       <module name="practice" />
@@ -78,8 +79,22 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="StackUsingTwoQueues" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="stack.StackUsingTwoQueues" />
+      <module name="practice" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="stack.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.StackUsingTwoQueues" />
         <item itemvalue="Application.FindNoOfIslands" />
         <item itemvalue="Application.CheckSubtree" />
         <item itemvalue="Application.RemoveDuplicates" />
@@ -146,7 +161,14 @@
       <option name="project" value="LOCAL" />
       <updated>1576702614420</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="graph | topological sort">
+      <created>1576702666679</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1576702666679</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
