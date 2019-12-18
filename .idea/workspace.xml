@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="f635d0f8-903d-47c8-91fd-e4167906b55b" name="Default Changelist" comment="graph | find no of islands">
+    <list default="true" id="f635d0f8-903d-47c8-91fd-e4167906b55b" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/graph/TopologicalSort.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/graph/FindNoOfIslands.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/graph/FindNoOfIslands.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/maths/Point.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/maths/Point.java" afterDir="false" />
     </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -21,6 +21,7 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="ProjectId" id="1V6fx32UnS1BmjU3TOEpCP5Y0rR" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="PropertiesComponent">
     <property name="add_unversioned_files" value="true" />
@@ -117,14 +118,49 @@
       <option name="project" value="LOCAL" />
       <updated>1576576853226</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="graph | find no of islands">
+      <created>1576577066024</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1576577066024</updated>
+    </task>
+    <task id="LOCAL-00006" summary="misc | utility class">
+      <created>1576577836151</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1576577836151</updated>
+    </task>
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="f635d0f8-903d-47c8-91fd-e4167906b55b" name="Default Changelist" comment="" />
+      <created>1576578707622</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1576578707622</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="add : detect loop, check for bst, diamond pattern | gitignore update" />
     <MESSAGE value="tree | check if subtree" />
     <MESSAGE value="graph | find no of islands" />
-    <option name="LAST_COMMIT_MESSAGE" value="graph | find no of islands" />
+    <MESSAGE value="misc | utility class" />
+    <option name="LAST_COMMIT_MESSAGE" value="misc | utility class" />
   </component>
   <component name="XDebuggerManager">
     <watches-manager>
