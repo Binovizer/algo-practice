@@ -5,6 +5,4 @@ package misc;
  *
  * @author Mohd Nadeem
  */
-public class MeetingRoomReservation {
-
-}
+public class MeetingRoomReservation {}

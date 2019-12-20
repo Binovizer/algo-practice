@@ -6,5 +6,7 @@ package graph;
  * @author Mohd Nadeem
  */
 public enum State {
-    VISITED, UNVISITED, VISITING;
+  VISITED,
+  UNVISITED,
+  VISITING
 }

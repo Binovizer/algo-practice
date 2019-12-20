@@ -7,10 +7,10 @@ package sorting;
  */
 public interface Sort {
 
-    /**
-     * Sorts the array
-     *
-     * @param arr array to be sorted
-     */
-    void sort(int[] arr);
+  /**
+   * Sorts the array
+   *
+   * @param arr array to be sorted
+   */
+  void sort(int[] arr);
 }

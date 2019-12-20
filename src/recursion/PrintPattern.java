@@ -7,18 +7,17 @@ package recursion;
  */
 public class PrintPattern {
 
-    public static void main(String[] args) {
-        printPattern(10);
-    }
+  public static void main(String[] args) {
+    printPattern(10);
+  }
 
-    private static void printPattern(int num) {
-        if(num <= 0){
-            System.out.print(num + " ");
-            return;
-        }
-        System.out.print(num + " ");
-        printPattern(num-5);
-        System.out.print(num + " ");
-
+  private static void printPattern(int num) {
+    if (num <= 0) {
+      System.out.print(num + " ");
+      return;
     }
+    System.out.print(num + " ");
+    printPattern(num - 5);
+    System.out.print(num + " ");
+  }
 }
