@@ -2,7 +2,8 @@ package tree;
 
 import utils.AssortedMethods;
 
-import java.util.HashMap;
+import java.util.Map;
+import java.util.TreeMap;
 
 /**
  * The type TopView
@@ -24,7 +25,7 @@ public class TopView {
         System.out.println(map);
     }
 
-    private static HashMap<Integer, Integer> map = new HashMap<>();
+    private static Map<Integer, Integer> map = new TreeMap<>();
 
     private void printTopView(TreeNode root, int hd) {
         if(root == null){

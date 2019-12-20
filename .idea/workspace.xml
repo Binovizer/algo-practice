@@ -2,8 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f635d0f8-903d-47c8-91fd-e4167906b55b" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/linkedlist/ZigZagList.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/tree/BottomView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/tree/BottomView.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/tree/TopView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/tree/TopView.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -38,26 +39,13 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.ZigZagList">
-    <configuration name="CheckSubtree" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="tree.CheckSubtree" />
+  <component name="RunManager" selected="Application.BottomView">
+    <configuration name="BottomView" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="tree.BottomView" />
       <module name="practice" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="tree.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="FindNoOfIslands" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="graph.FindNoOfIslands" />
-      <module name="practice" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="graph.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -104,6 +92,19 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="TopView" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="tree.TopView" />
+      <module name="practice" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="tree.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="ZigZagList" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="linkedlist.ZigZagList" />
       <module name="practice" />
@@ -119,11 +120,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.BottomView" />
+        <item itemvalue="Application.TopView" />
         <item itemvalue="Application.ZigZagList" />
         <item itemvalue="Application.StackUsingTwoQueues" />
         <item itemvalue="Application.StackUsingTwoQueues" />
-        <item itemvalue="Application.FindNoOfIslands" />
-        <item itemvalue="Application.CheckSubtree" />
       </list>
     </recent_temporary>
   </component>
@@ -208,7 +209,14 @@
       <option name="project" value="LOCAL" />
       <updated>1576705071212</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="linkedlist | rearrange zigzag list">
+      <created>1576765456869</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1576765456869</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -231,7 +239,8 @@
     <MESSAGE value="misc | utility class" />
     <MESSAGE value="graph | topological sort" />
     <MESSAGE value="stack | stack using two queues" />
-    <option name="LAST_COMMIT_MESSAGE" value="stack | stack using two queues" />
+    <MESSAGE value="linkedlist | rearrange zigzag list" />
+    <option name="LAST_COMMIT_MESSAGE" value="linkedlist | rearrange zigzag list" />
   </component>
   <component name="XDebuggerManager">
     <watches-manager>

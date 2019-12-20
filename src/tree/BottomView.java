@@ -2,7 +2,8 @@ package tree;
 
 import utils.AssortedMethods;
 
-import java.util.HashMap;
+import java.util.Map;
+import java.util.TreeMap;
 
 /**
  * The type TopView
@@ -16,25 +17,37 @@ public class BottomView {
         root.print();
 
         BottomView bottomView = new BottomView();
-        bottomView.printBottomView(root);
+        bottomView.printBottomViewRightNode(root);
     }
 
-    private void printBottomView(TreeNode root) {
-        printBottomView(root, 0);
+    private void printBottomViewRightNode(TreeNode root) {
+        printBottomViewLeftNode(root, 0);
+//        printBottomViewRightNode(root, 0);
         System.out.println(map);
     }
 
-    private static HashMap<Integer, Integer> map = new HashMap<>();
+    private static Map<Integer, Integer> map = new TreeMap<>();
 
-    private void printBottomView(TreeNode root, int hd) {
+    private void printBottomViewLeftNode(TreeNode root, int hd) {
         if(root == null){
             return;
         }
-        printBottomView(root.left, hd - 1);
+        printBottomViewLeftNode(root.left, hd - 1);
         if(! map.containsKey(hd)){
-            System.out.println(root.data);
+            System.out.print(root.data + " ");
             map.put(hd, root.data);
         }
-        printBottomView(root.right, hd + 1);
+        printBottomViewLeftNode(root.right, hd + 1);
+    }
+
+    private void printBottomViewRightNode(TreeNode root, int hd) {
+        if(root == null){
+            return;
+        }
+        printBottomViewRightNode(root.right, hd + 1);
+        if(! map.containsKey(hd)){
+            map.put(hd, root.data);
+        }
+        printBottomViewRightNode(root.left, hd - 1);
     }
 }
