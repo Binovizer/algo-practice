@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="f635d0f8-903d-47c8-91fd-e4167906b55b" name="Default Changelist" comment="">
+    <list default="true" id="f635d0f8-903d-47c8-91fd-e4167906b55b" name="Default Changelist" comment="tree | top, bottom view logic improved">
+      <change afterPath="$PROJECT_DIR$/src/arraysandstring/TrappingRainWater.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/tree/BottomView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/tree/BottomView.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/tree/TopView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/tree/TopView.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/linkedlist/IsPallindrome.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/linkedlist/IsPalindrome.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -20,6 +20,11 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="PREVIOUS_COMMIT_AUTHORS">
+      <list>
+        <option value="Mohd Nadeem" />
+      </list>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="1V6fx32UnS1BmjU3TOEpCP5Y0rR" />
@@ -39,22 +44,9 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.BottomView">
-    <configuration name="BottomView" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="tree.BottomView" />
-      <module name="practice" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="tree.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="RemoveDuplicates" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="linkedlist.RemoveDuplicates" />
+  <component name="RunManager" selected="Application.TrappingRainWater">
+    <configuration name="AddOneToList" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="linkedlist.AddOneToList" />
       <module name="practice" />
       <extension name="coverage">
         <pattern>
@@ -66,12 +58,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="StackUsingTwoQueues" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="stack.StackUsingTwoQueues" />
+    <configuration name="BottomView" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="tree.BottomView" />
       <module name="practice" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="stack.*" />
+          <option name="PATTERN" value="tree.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -105,6 +97,19 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="TrappingRainWater" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="arraysandstring.TrappingRainWater" />
+      <module name="practice" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="arraysandstring.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="ZigZagList" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="linkedlist.ZigZagList" />
       <module name="practice" />
@@ -120,11 +125,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.TrappingRainWater" />
+        <item itemvalue="Application.AddOneToList" />
+        <item itemvalue="Application.ZigZagList" />
         <item itemvalue="Application.BottomView" />
         <item itemvalue="Application.TopView" />
-        <item itemvalue="Application.ZigZagList" />
-        <item itemvalue="Application.StackUsingTwoQueues" />
-        <item itemvalue="Application.StackUsingTwoQueues" />
       </list>
     </recent_temporary>
   </component>
@@ -216,7 +221,21 @@
       <option name="project" value="LOCAL" />
       <updated>1576765456869</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="tree | top, bottom view logic improved">
+      <created>1576825253715</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1576825253715</updated>
+    </task>
+    <task id="LOCAL-00013" summary="refactor | reformat code">
+      <created>1576850692531</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1576850692531</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -240,7 +259,9 @@
     <MESSAGE value="graph | topological sort" />
     <MESSAGE value="stack | stack using two queues" />
     <MESSAGE value="linkedlist | rearrange zigzag list" />
-    <option name="LAST_COMMIT_MESSAGE" value="linkedlist | rearrange zigzag list" />
+    <MESSAGE value="tree | top, bottom view logic improved" />
+    <MESSAGE value="refactor | reformat code" />
+    <option name="LAST_COMMIT_MESSAGE" value="refactor | reformat code" />
   </component>
   <component name="XDebuggerManager">
     <watches-manager>
