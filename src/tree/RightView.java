@@ -12,49 +12,49 @@ import java.util.Queue;
  */
 public class RightView {
 
-  private static int maxLevel = -1;
+    private static int maxLevel = -1;
 
-  public static void main(String[] args) {
-    TreeNode root = AssortedMethods.createTreeFromArray(new int[] {1, 2, 3, 4, 5, 6, 7});
-    root.print();
+    public static void main(String[] args) {
+        TreeNode root = AssortedMethods.createTreeFromArray(new int[] {1, 2, 3, 4, 5, 6, 7});
+        root.print();
 
-    RightView rightView = new RightView();
-    //        rightView.printRightView(root);
-    rightView.printRightViewRecursive(root, 0);
-  }
-
-  private void printRightView(TreeNode root) {
-    if (root == null) {
-      return;
+        RightView rightView = new RightView();
+        //        rightView.printRightView(root);
+        rightView.printRightViewRecursive(root, 0);
     }
-    Queue<TreeNode> q = new LinkedList<>();
-    q.add(root);
-    while (!q.isEmpty()) {
-      int size = q.size();
-      for (int i = 0; i < size; i++) {
-        TreeNode poll = q.poll();
-        if (i == size - 1) {
-          System.out.println(poll.data);
+
+    private void printRightView(TreeNode root) {
+        if (root == null) {
+            return;
         }
-        if (poll.left != null) {
-          q.offer(poll.left);
+        Queue<TreeNode> q = new LinkedList<>();
+        q.add(root);
+        while (!q.isEmpty()) {
+            int size = q.size();
+            for (int i = 0; i < size; i++) {
+                TreeNode poll = q.poll();
+                if (i == size - 1) {
+                    System.out.println(poll.data);
+                }
+                if (poll.left != null) {
+                    q.offer(poll.left);
+                }
+                if (poll.right != null) {
+                    q.offer(poll.right);
+                }
+            }
         }
-        if (poll.right != null) {
-          q.offer(poll.right);
-        }
-      }
     }
-  }
 
-  private void printRightViewRecursive(TreeNode root, int level) {
-    if (root == null) {
-      return;
+    private void printRightViewRecursive(TreeNode root, int level) {
+        if (root == null) {
+            return;
+        }
+        if (level > maxLevel) {
+            maxLevel = level;
+            System.out.println(root.data);
+        }
+        printRightViewRecursive(root.right, level + 1);
+        printRightViewRecursive(root.left, level + 1);
     }
-    if (level > maxLevel) {
-      maxLevel = level;
-      System.out.println(root.data);
-    }
-    printRightViewRecursive(root.right, level + 1);
-    printRightViewRecursive(root.left, level + 1);
-  }
 }

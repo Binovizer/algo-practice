@@ -1,10 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="f635d0f8-903d-47c8-91fd-e4167906b55b" name="Default Changelist" comment="tree | top, bottom view logic improved">
-      <change afterPath="$PROJECT_DIR$/src/arraysandstring/TrappingRainWater.java" afterDir="false" />
+    <list default="true" id="f635d0f8-903d-47c8-91fd-e4167906b55b" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/linkedlist/IsPallindrome.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/linkedlist/IsPalindrome.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/arraysandstring/TrappingRainWater.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/arraysandstring/TrappingRainWater.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -31,6 +30,7 @@
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="PropertiesComponent">
     <property name="add_unversioned_files" value="true" />
+    <property name="settings.editor.selected.configurable" value="google-java-format.settings" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -235,7 +235,14 @@
       <option name="project" value="LOCAL" />
       <updated>1576850692531</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="array | water trapping problem">
+      <created>1577098357685</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1577098357685</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -261,7 +268,8 @@
     <MESSAGE value="linkedlist | rearrange zigzag list" />
     <MESSAGE value="tree | top, bottom view logic improved" />
     <MESSAGE value="refactor | reformat code" />
-    <option name="LAST_COMMIT_MESSAGE" value="refactor | reformat code" />
+    <MESSAGE value="array | water trapping problem" />
+    <option name="LAST_COMMIT_MESSAGE" value="array | water trapping problem" />
   </component>
   <component name="XDebuggerManager">
     <watches-manager>

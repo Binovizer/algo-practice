@@ -11,7 +11,7 @@ import java.util.stream.Collectors;
  */
 public class Utility {
 
-  public static <T> List<List<T>> twoDArrayToList(T[][] twoDArray) {
-    return Arrays.stream(twoDArray).map(Arrays::asList).collect(Collectors.toList());
-  }
+    public static <T> List<List<T>> twoDArrayToList(T[][] twoDArray) {
+        return Arrays.stream(twoDArray).map(Arrays::asList).collect(Collectors.toList());
+    }
 }
