@@ -2,8 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f635d0f8-903d-47c8-91fd-e4167906b55b" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/arraysandstring/Factorial.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/arraysandstring/Multiply.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/arraysandstring/TrappingRainWater.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/arraysandstring/TrappingRainWater.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -44,7 +45,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.TrappingRainWater">
+  <component name="RunManager" selected="Application.Factorial">
     <configuration name="AddOneToList" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="linkedlist.AddOneToList" />
       <module name="practice" />
@@ -58,12 +59,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="BottomView" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="tree.BottomView" />
+    <configuration name="Factorial" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="arraysandstring.Factorial" />
       <module name="practice" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="tree.*" />
+          <option name="PATTERN" value="arraysandstring.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -71,25 +72,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="StackUsingTwoQueues" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="stack.StackUsingTwoQueues" />
+    <configuration name="Multiply" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="arraysandstring.Multiply" />
       <module name="practice" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="stack.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="TopView" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="tree.TopView" />
-      <module name="practice" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="tree.*" />
+          <option name="PATTERN" value="arraysandstring.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -125,11 +113,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Factorial" />
+        <item itemvalue="Application.Multiply" />
         <item itemvalue="Application.TrappingRainWater" />
         <item itemvalue="Application.AddOneToList" />
         <item itemvalue="Application.ZigZagList" />
-        <item itemvalue="Application.BottomView" />
-        <item itemvalue="Application.TopView" />
       </list>
     </recent_temporary>
   </component>
@@ -249,7 +237,14 @@
       <option name="project" value="LOCAL" />
       <updated>1577778020899</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="arrayandstring | trapping rain water">
+      <created>1578162379167</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1578162379167</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -276,12 +271,14 @@
     <MESSAGE value="tree | top, bottom view logic improved" />
     <MESSAGE value="array | water trapping problem" />
     <MESSAGE value="refactor | reformat code" />
-    <option name="LAST_COMMIT_MESSAGE" value="refactor | reformat code" />
+    <MESSAGE value="arrayandstring | trapping rain water" />
+    <option name="LAST_COMMIT_MESSAGE" value="arrayandstring | trapping rain water" />
   </component>
   <component name="XDebuggerManager">
     <watches-manager>
       <configuration name="Application">
         <watch expression="isValid(matrix, currX, currY)" />
+        <watch expression="Arrays.toString(ans)" language="JAVA" />
       </configuration>
     </watches-manager>
   </component>
