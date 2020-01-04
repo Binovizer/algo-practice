@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f635d0f8-903d-47c8-91fd-e4167906b55b" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/arraysandstring/FirstOneIndex.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/arraysandstring/Leaders.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -44,20 +44,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.FirstOneIndex">
-    <configuration name="AddOneToList" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="linkedlist.AddOneToList" />
-      <module name="practice" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="linkedlist.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="Application.Leaders">
     <configuration name="Factorial" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="arraysandstring.Factorial" />
       <module name="practice" />
@@ -73,6 +60,19 @@
     </configuration>
     <configuration name="FirstOneIndex" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="arraysandstring.FirstOneIndex" />
+      <module name="practice" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="arraysandstring.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Leaders" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="arraysandstring.Leaders" />
       <module name="practice" />
       <extension name="coverage">
         <pattern>
@@ -112,11 +112,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Leaders" />
         <item itemvalue="Application.FirstOneIndex" />
         <item itemvalue="Application.Factorial" />
         <item itemvalue="Application.Multiply" />
         <item itemvalue="Application.TrappingRainWater" />
-        <item itemvalue="Application.AddOneToList" />
       </list>
     </recent_temporary>
   </component>
@@ -250,7 +250,14 @@
       <option name="project" value="LOCAL" />
       <updated>1578172887709</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="arrayandstring | find first 1 in sorted 0,1 array">
+      <created>1578176583648</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1578176583649</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -279,7 +286,8 @@
     <MESSAGE value="refactor | reformat code" />
     <MESSAGE value="arrayandstring | trapping rain water" />
     <MESSAGE value="arrayandstring | factorial, multiply big numbers" />
-    <option name="LAST_COMMIT_MESSAGE" value="arrayandstring | factorial, multiply big numbers" />
+    <MESSAGE value="arrayandstring | find first 1 in sorted 0,1 array" />
+    <option name="LAST_COMMIT_MESSAGE" value="arrayandstring | find first 1 in sorted 0,1 array" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/practice$Main.ic" NAME="Main Coverage Results" MODIFIED="1563698939956" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
