@@ -28,8 +28,6 @@ public class VerticalOrderTraversal {
         }
     }
 
-    private void traverse(TreeNode root) {}
-
     private void traverseRecursive(TreeNode root, int hd) {
         if (root == null) {
             return;
