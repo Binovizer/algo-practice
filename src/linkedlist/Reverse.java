@@ -20,10 +20,11 @@ public class Reverse {
         //        LinkedListNode reversed = reverse.reverse(list);
         //        System.out.println(reversed.printForward());
 
-        LinkedListNode list2 =
-                AssortedMethods.createLinkedListFromArray(new int[] {1, 2, 3, 4, 5, 6, 7});
-        LinkedListNode reverseInGroups = reverse.reverseInGroups(list2, 3);
-        System.out.println(reverseInGroups.printForward());
+        LinkedListNode list2 = AssortedMethods.createLinkedListFromArray(new int[] {1, 2, 3, 4});
+        //        LinkedListNode reverseInGroups = reverse.reverseInGroups(list2, 3);
+        //        System.out.println(reverseInGroups.printForward());
+        LinkedListNode reversed = reverse.recursiveReverse(list2);
+        System.out.println(reversed.printForward());
     }
 
     public LinkedListNode reverse(LinkedListNode head) {
@@ -37,6 +38,16 @@ public class Reverse {
             pre = current;
             current = next;
         }
+        return pre;
+    }
+
+    public LinkedListNode recursiveReverse(LinkedListNode head) {
+        if (head == null || head.next == null) {
+            return head;
+        }
+        LinkedListNode pre = recursiveReverse(head.next);
+        head.next.next = head;
+        head.next = null;
         return pre;
     }
 
