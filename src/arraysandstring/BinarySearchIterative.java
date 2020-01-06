@@ -8,8 +8,9 @@ package arraysandstring;
 public class BinarySearchIterative {
 
     public static void main(String[] args) {
-        int[] arr = {1, 2, 3, 4, 5, 6, 7};
-        int index = binarySearch(arr, 7);
+        int[] arr = {0, 1, 2, 3, 4, 5, 6, 7};
+        //        int index = binarySearch(arr, 7);
+        int index = binarySearchRecursive(arr, 7);
         System.out.println(index);
     }
 
@@ -27,5 +28,23 @@ public class BinarySearchIterative {
             }
         }
         return -1;
+    }
+
+    private static int binarySearchRecursive(int[] arr, int element) {
+        return binarySearchRecursiveUtil(arr, element, 0, arr.length - 1);
+    }
+
+    private static int binarySearchRecursiveUtil(int[] arr, int element, int start, int end) {
+        if (start > end) {
+            return -1;
+        }
+        int mid = (start + end) / 2;
+        if (arr[mid] == element) {
+            return mid;
+        } else if (arr[mid] < element) {
+            return binarySearchRecursiveUtil(arr, element, mid + 1, end);
+        } else {
+            return binarySearchRecursiveUtil(arr, element, start, mid - 1);
+        }
     }
 }
