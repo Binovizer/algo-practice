@@ -8,15 +8,14 @@ package arraysandstring;
 public class Multiply {
 
     public static void main(String[] args) {
-        Multiply multiply = new Multiply();
-        String ans = multiply.multiply("123", "345");
+        String ans = Multiply.multiply("123", "345");
         System.out.println("ans = " + ans);
     }
 
     public static String multiply(String num1, String num2) {
         int len1 = num1.length();
         int len2 = num2.length();
-        int ans[] = new int[len1 + len2];
+        int[] ans = new int[len1 + len2];
         int index1 = 0;
         for (int i = len1 - 1; i >= 0; i--) {
             int carry = 0;
