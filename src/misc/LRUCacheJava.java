@@ -8,14 +8,17 @@ import java.util.Map;
  *
  * @author Mohd Nadeem
  */
-public class LRUCacheJava {
+public class LRUCacheJava<K, V> extends LinkedHashMap<K, V> {
 
-    public static <K, V> Map<K, V> lruCache(final int maxSize) {
-        return new LinkedHashMap<K, V>(maxSize * 4 / 3, 0.75f, true) {
-            @Override
-            protected boolean removeEldestEntry(Map.Entry<K, V> eldest) {
-                return size() > maxSize;
-            }
-        };
+    private Integer capacity;
+
+    public LRUCacheJava(Integer capacity) {
+        super(capacity * 4 / 3, 0.75f);
+        this.capacity = capacity;
+    }
+
+    @Override
+    protected boolean removeEldestEntry(Map.Entry<K, V> eldest) {
+        return size() > capacity;
     }
 }
