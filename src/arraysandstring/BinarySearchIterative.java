@@ -30,21 +30,21 @@ public class BinarySearchIterative {
         return -1;
     }
 
-    private static int binarySearchRecursive(int[] arr, int element) {
-        return binarySearchRecursiveUtil(arr, element, 0, arr.length - 1);
+    private static int binarySearchRecursive(int[] arr, int searchElement) {
+        return binarySearchRecursiveUtil(arr, searchElement, 0, arr.length - 1);
     }
 
-    private static int binarySearchRecursiveUtil(int[] arr, int element, int start, int end) {
+    private static int binarySearchRecursiveUtil(int[] arr, int searchElement, int start, int end) {
         if (start > end) {
             return -1;
         }
         int mid = (start + end) / 2;
-        if (arr[mid] == element) {
+        if (arr[mid] == searchElement) {
             return mid;
-        } else if (arr[mid] < element) {
-            return binarySearchRecursiveUtil(arr, element, mid + 1, end);
+        } else if (arr[mid] < searchElement) {
+            return binarySearchRecursiveUtil(arr, searchElement, mid + 1, end);
         } else {
-            return binarySearchRecursiveUtil(arr, element, start, mid - 1);
+            return binarySearchRecursiveUtil(arr, searchElement, start, mid - 1);
         }
     }
 }
