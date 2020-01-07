@@ -5,7 +5,7 @@ package algo.arraysandstring;
  *
  * @author Mohd Nadeem
  */
-public class PallindromePermutation {
+public class PalindromePermutation {
 
     public boolean isPermutation(String string) {
         String lowerCaseString = string.toLowerCase();
