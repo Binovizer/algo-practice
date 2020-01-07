@@ -26,7 +26,7 @@ public class PalindromePermutation {
         }
         boolean alreadyOdd = false;
         for (int i : count) {
-            boolean isOdd = (i & 1) == 0;
+            boolean isOdd = (i & 1) == 1;
             if (isOdd) {
                 if (alreadyOdd) {
                     return false;
