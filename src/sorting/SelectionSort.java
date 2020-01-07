@@ -1,11 +1,20 @@
 package sorting;
 
+import java.util.Arrays;
+
 /**
  * The type SelectionSort
  *
  * @author Mohd Nadeem
  */
 public class SelectionSort implements Sort {
+
+    public static void main(String[] args) {
+        int[] arr = {3, 4, 1, 2, 5};
+        Sort sort = new SelectionSort();
+        sort.sort(arr);
+        System.out.println("arr = " + Arrays.toString(arr));
+    }
 
     @Override
     public void sort(int[] arr) {

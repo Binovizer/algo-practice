@@ -1,11 +1,20 @@
 package sorting;
 
+import java.util.Arrays;
+
 /**
  * The type MergeSort
  *
  * @author Mohd Nadeem
  */
 public class MergeSort implements Sort {
+
+    public static void main(String[] args) {
+        int[] arr = {3, 4, 1, 2, 5};
+        Sort sort = new MergeSort();
+        sort.sort(arr);
+        System.out.println("arr = " + Arrays.toString(arr));
+    }
 
     @Override
     public void sort(int[] arr) {
@@ -44,14 +53,10 @@ public class MergeSort implements Sort {
         }
 
         while (i < n1) {
-            arr[k] = left[i];
-            i++;
-            k++;
+            arr[k++] = left[i++];
         }
         while (j < n2) {
-            arr[k] = right[j];
-            j++;
-            k++;
+            arr[k++] = right[j++];
         }
     }
 }
