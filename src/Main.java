@@ -1,4 +1,4 @@
-import tree.TreeNode;
+import algo.tree.TreeNode;
 
 public class Main {
 
