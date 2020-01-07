@@ -1,7 +1,5 @@
 package algo.sorting;
 
-import algo.Sort;
-
 import java.util.Arrays;
 
 /**
