@@ -10,14 +10,14 @@ public class DeleteMiddleNode {
     public void deleteMiddle(LinkedListNode head) {
         LinkedListNode slow = head;
         LinkedListNode fast = head;
-        LinkedListNode pre = null;
+        LinkedListNode prev = null;
         while (fast.next != null && fast.next.next != null) {
-            pre = slow;
+            prev = slow;
             slow = slow.next;
             fast = fast.next.next;
         }
-        if (pre != null) {
-            pre.next = slow.next;
+        if (prev != null) {
+            prev.next = slow.next;
         }
     }
 }
