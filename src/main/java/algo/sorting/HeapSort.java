@@ -7,7 +7,7 @@ import java.util.Arrays;
  *
  * @author Mohd Nadeem
  */
-public class HeapSort implements algo.sorting.Sort {
+public class HeapSort implements Sort {
 
     public static void main(String[] args) {
         int[] arr = {3, 4, 1, 2, 5};

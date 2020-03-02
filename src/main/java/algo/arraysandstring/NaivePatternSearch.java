@@ -22,6 +22,7 @@ public class NaivePatternSearch implements PatternSearch {
                 for (int j = 0; j < patternLen; j++) {
                     if (pattern.charAt(j) != str.charAt(i + j)) {
                         found = false;
+                        break;
                     }
                 }
                 if (found) {
@@ -43,6 +44,7 @@ public class NaivePatternSearch implements PatternSearch {
                 for (int j = 0; j < patternLen; j++) {
                     if (pattern.charAt(j) != str.charAt(i + j)) {
                         found = false;
+                        break;
                     }
                 }
                 if (found) {
