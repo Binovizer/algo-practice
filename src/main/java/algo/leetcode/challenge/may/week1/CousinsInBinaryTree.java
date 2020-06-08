@@ -42,4 +42,29 @@ public class CousinsInBinaryTree {
         return false;
     }
 
+    public int xDepth = -1;
+    public int yDepth = -1;
+    public TreeNode xParent;
+    public TreeNode yParent;
+
+    public boolean isCousinsRecursive(TreeNode root, int x, int y) {
+        isCousinsRecursiveUtil(root, x, y, 0, null);
+        if (xDepth == yDepth && xParent != yParent) return true;
+        return false;
+    }
+
+    private void isCousinsRecursiveUtil(TreeNode root, int x, int y, int depth, TreeNode parent) {
+        if (root == null) return;
+        if (root.data == x) {
+            xDepth = depth;
+            xParent = root;
+        } else if (root.data == y) {
+            yDepth = depth;
+            yParent = root;
+        } else {
+            isCousinsRecursiveUtil(root.left, x, y, depth + 1, root);
+            isCousinsRecursiveUtil(root.right, x, y, depth + 1, root);
+        }
+    }
+
 }
