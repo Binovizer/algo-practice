@@ -26,8 +26,8 @@ public class PowerSet {
             return;
         }
         String op2 = output + input.charAt(0); // Selecting the current symbol
-        input = input.substring(1); // Small the input by removing the current processed symbol
-        solve(input, output);
-        solve(input, op2);
+        input = input.substring(1); // Small the input by removing the current processed symbol which is at index 0
+        solve(input, output); // Recurse with not selecting the current symbol
+        solve(input, op2); // Recurse with selecting current symbol
     }
 }
