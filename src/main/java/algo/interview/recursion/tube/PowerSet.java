@@ -1,4 +1,4 @@
-package algo.interview.recursion;
+package algo.interview.recursion.tube;
 
 /**
  * This class helps find the power set of a string

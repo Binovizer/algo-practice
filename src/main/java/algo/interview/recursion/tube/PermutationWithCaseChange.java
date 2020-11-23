@@ -1,4 +1,4 @@
-package algo.interview.recursion;
+package algo.interview.recursion.tube;
 
 /**
  * This class helps generate permutations with case changes
