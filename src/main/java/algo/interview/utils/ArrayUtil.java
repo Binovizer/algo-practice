@@ -25,6 +25,19 @@ public class ArrayUtil {
     }
 
     /**
+     * Prints the given array
+     *
+     * @param arr the array
+     */
+    public static void printArray(int[] arr) {
+        System.out.println("::: Array :::");
+        for (int anInt : arr) {
+            System.out.print(anInt + " ");
+        }
+        System.out.println();
+    }
+
+    /**
      * Prints the given 2D char array
      *
      * @param arr the array
@@ -42,10 +55,10 @@ public class ArrayUtil {
     /**
      * Generates a 2D array of size m*n with given range
      *
-     * @param m the row
-     * @param n the column
+     * @param m              the row
+     * @param n              the column
      * @param inclusiveStart the inclusive start of range
-     * @param exclusiveEnd the exclusive end of range
+     * @param exclusiveEnd   the exclusive end of range
      * @return the 2D Array
      */
     public static int[][] generate2DRandomArray(int m, int n, int inclusiveStart, int exclusiveEnd) {
@@ -55,6 +68,23 @@ public class ArrayUtil {
             for (int j = 0; j < n; j++) {
                 arr[i][j] = random.nextInt(exclusiveEnd - inclusiveStart) + inclusiveStart;
             }
+        }
+        return arr;
+    }
+
+    /**
+     * Generates a 2D array of size m*n with given range
+     *
+     * @param size           the size
+     * @param inclusiveStart the inclusive start of range
+     * @param exclusiveEnd   the exclusive end of range
+     * @return the Array
+     */
+    public static int[] generateRandomArray(int size, int inclusiveStart, int exclusiveEnd) {
+        int[] arr = new int[size];
+        Random random = new Random();
+        for (int i = 0; i < size; i++) {
+            arr[i] = random.nextInt(exclusiveEnd - inclusiveStart) + inclusiveStart;
         }
         return arr;
     }
@@ -72,6 +102,20 @@ public class ArrayUtil {
             for (int j = 0; j < n; j++) {
                 arr[i][j] = startCounterInclusive++;
             }
+        }
+        return arr;
+    }
+
+    /**
+     * Generates a array of given size with given counter
+     *
+     * @param size the size
+     * @return the 2D Array
+     */
+    public static int[] generateSequentialArray(int size, int startCounterInclusive) {
+        int[] arr = new int[size];
+        for (int i = 0; i < size; i++) {
+            arr[i] = startCounterInclusive++;
         }
         return arr;
     }
