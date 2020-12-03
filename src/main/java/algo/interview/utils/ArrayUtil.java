@@ -1,5 +1,6 @@
 package algo.interview.utils;
 
+import java.util.Arrays;
 import java.util.Random;
 
 /**
@@ -19,6 +20,22 @@ public class ArrayUtil {
         for (int[] ints : arr) {
             for (int anInt : ints) {
                 System.out.print(anInt + " ");
+            }
+            System.out.println();
+        }
+    }
+
+    /**
+     * Prints the given 2D array
+     *
+     * @param arr the array
+     */
+    public static void print2DArray(boolean[][] arr) {
+        System.out.println("::: Array :::");
+        for (boolean[] bools : arr) {
+            for (boolean aBool : bools) {
+                if (aBool) System.out.printf("%3c ", 'T');
+                else System.out.printf("%3c ", 'F');
             }
             System.out.println();
         }
@@ -55,13 +72,14 @@ public class ArrayUtil {
     /**
      * Generates a 2D array of size m*n with given range
      *
-     * @param m              the row
-     * @param n              the column
+     * @param m the row
+     * @param n the column
      * @param inclusiveStart the inclusive start of range
-     * @param exclusiveEnd   the exclusive end of range
+     * @param exclusiveEnd the exclusive end of range
      * @return the 2D Array
      */
-    public static int[][] generate2DRandomArray(int m, int n, int inclusiveStart, int exclusiveEnd) {
+    public static int[][] generate2DRandomArray(
+            int m, int n, int inclusiveStart, int exclusiveEnd) {
         int[][] arr = new int[m][n];
         Random random = new Random();
         for (int i = 0; i < m; i++) {
@@ -75,9 +93,9 @@ public class ArrayUtil {
     /**
      * Generates a 2D array of size m*n with given range
      *
-     * @param size           the size
+     * @param size the size
      * @param inclusiveStart the inclusive start of range
-     * @param exclusiveEnd   the exclusive end of range
+     * @param exclusiveEnd the exclusive end of range
      * @return the Array
      */
     public static int[] generateRandomArray(int size, int inclusiveStart, int exclusiveEnd) {
@@ -120,6 +138,14 @@ public class ArrayUtil {
         return arr;
     }
 
+    /**
+     * Generates 2D Sequential Array
+     *
+     * @param m the m
+     * @param n the n
+     * @param startCounterInclusive the start counter
+     * @return the char array
+     */
     public static char[][] generate2DSequentialCharArray(int m, int n, char startCounterInclusive) {
         char[][] arr = new char[m][n];
         for (int i = 0; i < m; i++) {
@@ -128,5 +154,17 @@ public class ArrayUtil {
             }
         }
         return arr;
+    }
+
+    /**
+     * Fills 2D Array with the given value
+     *
+     * @param array the array
+     * @param val the val
+     */
+    public static void fill2DArray(int[][] array, int val) {
+        for (int[] arr : array) {
+            Arrays.fill(arr, val);
+        }
     }
 }
