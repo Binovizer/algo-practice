@@ -18,6 +18,7 @@ public class PrintLCS {
     private String printLCS(String X, String Y, int n, int m) {
         int[][] dp = new int[n + 1][m + 1];
 
+        // Initialization
         for (int i = 0; i <= n; i++) {
             for (int j = 0; j <= m; j++) {
                 if (i == 0 || j == 0) {
@@ -25,6 +26,8 @@ public class PrintLCS {
                 }
             }
         }
+
+        // Process
         for (int i = 1; i <= n; i++) {
             for (int j = 1; j <= m; j++) {
                 if (X.charAt(i - 1) == Y.charAt(j - 1)) {
