@@ -80,7 +80,7 @@ public class SubsetSum {
     }
 
     // Problem # 5
-    private int countMinimumSubsetSum(int[] arr, int diff) {
+    private int countSubsetSumWithDiff(int[] arr, int diff) {
         // Let Sum of subset 1 be S1, subset 2 be S2 and total sum is S then
         // S1 - S2 = diff
         // S1 + S2 = S
@@ -98,7 +98,7 @@ public class SubsetSum {
         // 2. With all negatives
         // S1 - S2 = diff
         // Same problem as count minimum subset
-        return countMinimumSubsetSum(arr, sum);
+        return countSubsetSumWithDiff(arr, sum);
     }
 
     private boolean isSubsetPresentUtil(int[] arr, int sum, int n) {
