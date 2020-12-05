@@ -1,7 +1,7 @@
 package algo.interview.dp;
 
 /**
- * This is the description of what this type does
+ * Longest Repeating Subsequence
  *
  * @author Nadeem 2020-12-04
  */
