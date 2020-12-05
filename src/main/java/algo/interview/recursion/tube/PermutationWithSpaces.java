@@ -1,8 +1,8 @@
 package algo.interview.recursion.tube;
 
 /**
- * This class helps generate all permutations with spaces of a string
- * Desc : https://practice.geeksforgeeks.org/problems/permutation-with-spaces/0
+ * This class helps generate all permutations with spaces of a string Desc :
+ * https://practice.geeksforgeeks.org/problems/permutation-with-spaces/0
  *
  * @author Nadeem 2020-11-22
  */
@@ -30,7 +30,7 @@ public class PermutationWithSpaces {
      * @param out the output
      */
     private void generate(String in, String out) {
-        if(in.length() == 1){
+        if (in.length() == 1) {
             System.out.println(out + in);
             return;
         }

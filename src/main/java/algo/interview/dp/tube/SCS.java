@@ -1,25 +1,22 @@
-package algo.interview.dp;
+package algo.interview.dp.tube;
 
 /**
  * This is the description of what this type does
  *
  * @author Nadeem 2020-12-04
  */
-public class MinDeletionPalindrome {
+public class SCS {
 
     public static void main(String[] args) {
-        String X = "agbcba";
-        MinDeletionPalindrome obj = new MinDeletionPalindrome();
-        int minDeletionPalindrome = obj.minDeletionPalindrome(X);
-        System.out.println("minDeletionPalindrome = " + minDeletionPalindrome);
+        String X = "AGGTAB";
+        String Y = "GXTXAYB";
+        SCS scs = new SCS();
+        int shortestCommonSupersequence = scs.shortestCommonSupersequence(X, Y);
+        System.out.println("shortestCommonSupersequence = " + shortestCommonSupersequence);
     }
 
-    private int minDeletionPalindrome(String X) {
-        return X.length() - lps(X);
-    }
-
-    private int lps(String X) {
-        return lcs(X, new StringBuilder(X).reverse().toString());
+    private int shortestCommonSupersequence(String X, String Y) {
+        return X.length() + Y.length() - lcs(X, Y);
     }
 
     private int lcs(String X, String Y) {

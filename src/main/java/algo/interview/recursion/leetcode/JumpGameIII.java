@@ -11,7 +11,7 @@ import java.util.Set;
 public class JumpGameIII {
 
     public static void main(String[] args) {
-        int[] arr = {3,0,2,1,2};
+        int[] arr = {3, 0, 2, 1, 2};
         int start = 2;
 
         JumpGameIII jumpGameIII = new JumpGameIII();
@@ -28,7 +28,7 @@ public class JumpGameIII {
         if (index < 0 || index >= arr.length || traversedIndices.contains(index)) {
             return false;
         }
-        if(arr[index] == 0){
+        if (arr[index] == 0) {
             return true;
         }
         traversedIndices.add(index);

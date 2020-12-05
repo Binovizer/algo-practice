@@ -3,8 +3,8 @@ package algo.interview.recursion.leetcode;
 import algo.interview.utils.TreeNode;
 
 /**
- * This class helps find the minimum absolute difference in a BST
- * Problem Description : https://leetcode.com/problems/minimum-absolute-difference-in-bst/
+ * This class helps find the minimum absolute difference in a BST Problem Description :
+ * https://leetcode.com/problems/minimum-absolute-difference-in-bst/
  *
  * @author Nadeem 2020-11-25
  */
@@ -21,11 +21,11 @@ public class MinAbsDiffInBST {
     }
 
     public void getMinimumDifferenceUtil(TreeNode root) {
-        if(root == null){
+        if (root == null) {
             return;
         }
         getMinimumDifferenceUtil(root.left);
-        if(prev != null){
+        if (prev != null) {
             min = Math.min(min, root.val - prev.val);
         }
         prev = root;

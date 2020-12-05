@@ -1,21 +1,22 @@
-package algo.interview.dp;
+package algo.interview.dp.tube;
 
 /**
  * This is the description of what this type does
  *
- * @author Nadeem 2020-12-04
+ * @author Nadeem 2020-12-05
  */
-public class LPS {
+public class SequencePatternMatching {
 
     public static void main(String[] args) {
-        String X = "agbcba";
-        LPS lps = new LPS();
-        int longestPalindromicSubsequence = lps.lps(X);
-        System.out.println("longestPalindromicSubsequence = " + longestPalindromicSubsequence);
+        String A = "AXY";
+        String B = "ADXCPY";
+        SequencePatternMatching sequencePatternMatching = new SequencePatternMatching();
+        boolean isMatching = sequencePatternMatching.match(A, B);
+        System.out.println("isMatching = " + isMatching);
     }
 
-    private int lps(String X) {
-        return lcs(X, new StringBuilder(X).reverse().toString());
+    private boolean match(String A, String B) {
+        return lcs(A, B) == A.length();
     }
 
     private int lcs(String X, String Y) {

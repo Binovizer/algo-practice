@@ -1,4 +1,4 @@
-package algo.interview.dp;
+package algo.interview.dp.tube;
 
 import algo.interview.utils.ArrayUtil;
 

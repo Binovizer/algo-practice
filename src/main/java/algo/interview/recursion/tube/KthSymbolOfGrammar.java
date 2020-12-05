@@ -1,8 +1,8 @@
 package algo.interview.recursion.tube;
 
 /**
- * This class helps return the kth symbol of grammar
- * Leetcode : https://leetcode.com/problems/k-th-symbol-in-grammar/
+ * This class helps return the kth symbol of grammar Leetcode :
+ * https://leetcode.com/problems/k-th-symbol-in-grammar/
  *
  * @author Nadeem 2020-11-21
  */
@@ -24,12 +24,12 @@ public class KthSymbolOfGrammar {
      * @return the kth symbol
      */
     private int kthSymbolOfGrammar(int n, int k) {
-        if(n==1 && k ==1){
+        if (n == 1 && k == 1) {
             return 0;
         }
-        int mid = (int) Math.pow(2, n-2);
-        if(k <= mid){
-            return kthSymbolOfGrammar(n-1, k);
+        int mid = (int) Math.pow(2, n - 2);
+        if (k <= mid) {
+            return kthSymbolOfGrammar(n - 1, k);
         } else {
             int symbol = kthSymbolOfGrammar(n - 1, k - mid);
             return complement(symbol);

@@ -21,11 +21,11 @@ public class SortList {
 
     private void sort(List<Integer> list) {
         // Base Case
-        if(list.size() == 1){
+        if (list.size() == 1) {
             return;
         }
         // Hypothesis + Induction
-        int remaining = list.remove(list.size()-1);
+        int remaining = list.remove(list.size() - 1);
         sort(list);
         insert(list, remaining);
     }

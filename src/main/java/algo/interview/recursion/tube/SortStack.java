@@ -27,7 +27,7 @@ public class SortStack {
      */
     public void sortStack(Stack<Integer> stack) {
         // Base Case
-        if(stack.size() == 1){
+        if (stack.size() == 1) {
             return;
         }
         int lastElement = stack.pop();
@@ -42,7 +42,7 @@ public class SortStack {
      * @param element the element
      */
     private void insert(Stack<Integer> stack, int element) {
-        if(stack.size() == 0 || stack.peek() <= element){
+        if (stack.size() == 0 || stack.peek() <= element) {
             stack.push(element);
             return;
         }
@@ -50,5 +50,4 @@ public class SortStack {
         insert(stack, element);
         stack.push(remaining);
     }
-
 }

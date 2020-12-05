@@ -15,9 +15,9 @@ public class TraceOfMatrixAddition {
         for (int i = 0; i < m; i++) {
             if (i < n) {
                 int rowValue = i * (n + 1) + 1;
-//                    System.out.println(i + ", " + j + " : " + rowValue);
+                //                    System.out.println(i + ", " + j + " : " + rowValue);
                 int colValue = i * (m + 1) + 1;
-//                    System.out.println(i + ", " + j + " : " + colValue);
+                //                    System.out.println(i + ", " + j + " : " + colValue);
                 trace += rowValue + colValue;
             }
         }

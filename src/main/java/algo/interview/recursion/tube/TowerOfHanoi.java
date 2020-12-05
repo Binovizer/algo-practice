@@ -28,8 +28,8 @@ public class TowerOfHanoi {
             System.out.println(String.format(OUTPUT_FORMAT, noOfDisks, source, dest));
             return;
         }
-        solve(noOfDisks-1, source, helper, dest);
+        solve(noOfDisks - 1, source, helper, dest);
         System.out.println(String.format(OUTPUT_FORMAT, noOfDisks, source, dest));
-        solve(noOfDisks-1, helper, dest, source);
+        solve(noOfDisks - 1, helper, dest, source);
     }
 }

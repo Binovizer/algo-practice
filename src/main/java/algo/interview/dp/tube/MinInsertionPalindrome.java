@@ -1,22 +1,25 @@
-package algo.interview.dp;
+package algo.interview.dp.tube;
 
 /**
  * This is the description of what this type does
  *
- * @author Nadeem 2020-12-05
+ * @author Nadeem 2020-12-04
  */
-public class SequencePatternMatching {
+public class MinInsertionPalindrome {
 
     public static void main(String[] args) {
-        String A = "AXY";
-        String B = "ADXCPY";
-        SequencePatternMatching sequencePatternMatching = new SequencePatternMatching();
-        boolean isMatching = sequencePatternMatching.match(A, B);
-        System.out.println("isMatching = " + isMatching);
+        String X = "agbcba";
+        MinInsertionPalindrome obj = new MinInsertionPalindrome();
+        int minInsertionPalindrome = obj.minInsertionPalindrome(X);
+        System.out.println("minInsertionPalindrome = " + minInsertionPalindrome);
     }
 
-    private boolean match(String A, String B) {
-        return lcs(A, B) == A.length();
+    private int minInsertionPalindrome(String X) {
+        return X.length() - lps(X);
+    }
+
+    private int lps(String X) {
+        return lcs(X, new StringBuilder(X).reverse().toString());
     }
 
     private int lcs(String X, String Y) {

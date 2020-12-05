@@ -1,4 +1,4 @@
-package algo.interview.dp;
+package algo.interview.dp.tube;
 
 /**
  * This is the description of what this type does
@@ -26,7 +26,8 @@ public class CoinChangeII {
         for (int i = 0; i <= n; i++) {
             for (int j = 0; j <= sum; j++) {
                 if (i == 0) {
-                    // -1 so that the int value does not overflow because of adding +1 in process step
+                    // -1 so that the int value does not overflow because of adding +1 in process
+                    // step
                     dp[i][j] = Integer.MAX_VALUE - 1;
                 }
                 if (j == 0) {

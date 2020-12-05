@@ -4,8 +4,9 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
- * This class helps generate n bit binary number having more 1’s than 0’s for any prefix
- * Problem Desc : https://practice.geeksforgeeks.org/problems/print-n-bit-binary-numbers-having-more-1s-than-0s0252/1
+ * This class helps generate n bit binary number having more 1’s than 0’s for any prefix Problem
+ * Desc :
+ * https://practice.geeksforgeeks.org/problems/print-n-bit-binary-numbers-having-more-1s-than-0s0252/1
  *
  * @author Nadeem 2020-11-22
  */

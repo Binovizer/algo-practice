@@ -1,7 +1,5 @@
 package algo.interview.array.leetcode;
 
-import java.util.Arrays;
-
 /**
  * This is the description of what this type does
  *

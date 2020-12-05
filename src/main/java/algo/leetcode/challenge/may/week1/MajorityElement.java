@@ -4,9 +4,10 @@ import java.util.HashMap;
 import java.util.Map;
 
 /**
- * MajorityElement helps find the majority element in an array.
- * The majority element is the element that appears more than <b>⌊ n/2 ⌋</b> times.
- * <a href="https://leetcode.com/explore/challenge/card/may-leetcoding-challenge/534/week-1-may-1st-may-7th/3321/">Majority Element</a>
+ * MajorityElement helps find the majority element in an array. The majority element is the element
+ * that appears more than <b>⌊ n/2 ⌋</b> times. <a
+ * href="https://leetcode.com/explore/challenge/card/may-leetcoding-challenge/534/week-1-may-1st-may-7th/3321/">Majority
+ * Element</a>
  *
  * @author Nadeem 2020-06-08 3:55 PM
  */

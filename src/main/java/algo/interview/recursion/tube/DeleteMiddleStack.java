@@ -26,7 +26,7 @@ public class DeleteMiddleStack {
      * @param stack the stack
      */
     private void deleteMiddleElement(Stack<Integer> stack) {
-        int k = stack.size()/2 + 1;
+        int k = stack.size() / 2 + 1;
         deleteKthElement(stack, k);
     }
 
@@ -37,12 +37,12 @@ public class DeleteMiddleStack {
      * @param k the k
      */
     private void deleteKthElement(Stack<Integer> stack, int k) {
-        if(k == 1){
+        if (k == 1) {
             stack.pop();
             return;
         }
         int remaining = stack.pop();
-        deleteKthElement(stack, k-1);
+        deleteKthElement(stack, k - 1);
         stack.push(remaining);
     }
 }

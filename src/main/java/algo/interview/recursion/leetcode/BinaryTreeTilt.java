@@ -3,8 +3,8 @@ package algo.interview.recursion.leetcode;
 import algo.interview.utils.TreeNode;
 
 /**
- * This class helps find the tilt of binary tree
- * Problem Desc : https://leetcode.com/problems/binary-tree-tilt/
+ * This class helps find the tilt of binary tree Problem Desc :
+ * https://leetcode.com/problems/binary-tree-tilt/
  *
  * @author Nadeem 2020-11-28
  */
@@ -19,7 +19,7 @@ public class BinaryTreeTilt {
     }
 
     private int sum(TreeNode root) {
-        if(root == null){
+        if (root == null) {
             return 0;
         }
         int leftSum = sum(root.left);
@@ -27,5 +27,4 @@ public class BinaryTreeTilt {
         sumOfTilts += Math.abs(leftSum - rightSum);
         return leftSum + rightSum + root.val;
     }
-
 }

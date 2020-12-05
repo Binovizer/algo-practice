@@ -1,7 +1,5 @@
 package algo.interview.recursion.leetcode;
 
-import java.util.Arrays;
-
 /**
  * This is the description of what this type does
  *
@@ -26,7 +24,8 @@ public class KEqualSumSubsets {
         return canPartition(nums, new boolean[nums.length], 0, k, 0, sum / k);
     }
 
-    private boolean canPartition(int[] nums, boolean[] used, int start, int k, int curSum, int subSum) {
+    private boolean canPartition(
+            int[] nums, boolean[] used, int start, int k, int curSum, int subSum) {
         if (k == 1) return true;
         if (curSum > subSum) return false;
         if (curSum == subSum) return canPartition(nums, used, 0, k - 1, 0, subSum);

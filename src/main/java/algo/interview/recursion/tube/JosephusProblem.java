@@ -6,7 +6,6 @@ import java.util.List;
 /**
  * This class helps solve the josephus problem
  *
- *
  * @author Nadeem 2020-11-22
  */
 public class JosephusProblem {

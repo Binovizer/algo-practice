@@ -7,7 +7,5 @@ package algo.interview.recursion.ll;
  */
 public class ReverseLinkedList {
 
-    public static void main(String[] args) {
-
-    }
+    public static void main(String[] args) {}
 }

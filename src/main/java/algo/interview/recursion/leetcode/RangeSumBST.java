@@ -3,8 +3,7 @@ package algo.interview.recursion.leetcode;
 import algo.interview.utils.TreeNode;
 
 /**
- * This class helps find range sum
- * Problem Desc : https://leetcode.com/problems/range-sum-of-bst/
+ * This class helps find range sum Problem Desc : https://leetcode.com/problems/range-sum-of-bst/
  *
  * @author Nadeem 2020-11-25
  */
@@ -19,10 +18,10 @@ public class RangeSumBST {
     }
 
     public void rangeSumBSTUtil(TreeNode root, int low, int high) {
-        if(root == null){
+        if (root == null) {
             return;
         }
-        if(root.val >= low && root.val <= high){
+        if (root.val >= low && root.val <= high) {
             sum += root.val;
         }
         rangeSumBSTUtil(root.left, low, high);

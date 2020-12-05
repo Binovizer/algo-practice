@@ -19,7 +19,6 @@ public class UniquePowerSet {
         System.out.println("uniquePowerSet = " + uniquePowerSet);
     }
 
-
     private void solve(Set<String> uniquePowerSet, String input, String output) {
         if (input.length() == 0) {
             uniquePowerSet.add(output);

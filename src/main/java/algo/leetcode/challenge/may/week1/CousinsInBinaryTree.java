@@ -6,8 +6,9 @@ import java.util.LinkedList;
 import java.util.Queue;
 
 /**
- * CousinsInBinaryTree helps in checking if <b>x</b> and <b>y</b> are cousins in the given tree.
- * <a href="https://leetcode.com/explore/challenge/card/may-leetcoding-challenge/534/week-1-may-1st-may-7th/3322/">Cousins in a Binary Tree</a>
+ * CousinsInBinaryTree helps in checking if <b>x</b> and <b>y</b> are cousins in the given tree. <a
+ * href="https://leetcode.com/explore/challenge/card/may-leetcoding-challenge/534/week-1-may-1st-may-7th/3322/">Cousins
+ * in a Binary Tree</a>
  *
  * @author Nadeem 2020-06-08 4:48 PM
  */
@@ -49,8 +50,7 @@ public class CousinsInBinaryTree {
 
     public boolean isCousinsRecursive(TreeNode root, int x, int y) {
         isCousinsRecursiveUtil(root, x, y, 0, null);
-        if (xDepth == yDepth && xParent != yParent) return true;
-        return false;
+        return xDepth == yDepth && xParent != yParent;
     }
 
     private void isCousinsRecursiveUtil(TreeNode root, int x, int y, int depth, TreeNode parent) {
@@ -66,5 +66,4 @@ public class CousinsInBinaryTree {
             isCousinsRecursiveUtil(root.right, x, y, depth + 1, root);
         }
     }
-
 }

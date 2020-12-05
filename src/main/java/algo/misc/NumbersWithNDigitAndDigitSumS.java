@@ -7,7 +7,8 @@ public class NumbersWithNDigitAndDigitSumS {
     public static void main(String[] args) {
         int n = 6;
         int sum = 7;
-        NumbersWithNDigitAndDigitSumS numbersWithNDigitAndDigitSumS = new NumbersWithNDigitAndDigitSumS();
+        NumbersWithNDigitAndDigitSumS numbersWithNDigitAndDigitSumS =
+                new NumbersWithNDigitAndDigitSumS();
         numbersWithNDigitAndDigitSumS.findNumbers(n, sum);
         System.out.println(count);
     }

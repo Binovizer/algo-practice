@@ -23,7 +23,7 @@ public class MergeSort implements algo.sorting.Sort {
 
     private void sortWrapper(int[] arr, int l, int r) {
         if (l < r) {
-            int mid =  l + (r - l) / 2;
+            int mid = l + (r - l) / 2;
             sortWrapper(arr, l, mid);
             sortWrapper(arr, mid + 1, r);
             merge(arr, l, mid, r);

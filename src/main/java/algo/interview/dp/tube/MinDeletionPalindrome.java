@@ -1,20 +1,20 @@
-package algo.interview.dp;
+package algo.interview.dp.tube;
 
 /**
  * This is the description of what this type does
  *
  * @author Nadeem 2020-12-04
  */
-public class MinInsertionPalindrome {
+public class MinDeletionPalindrome {
 
     public static void main(String[] args) {
         String X = "agbcba";
-        MinInsertionPalindrome obj = new MinInsertionPalindrome();
-        int minInsertionPalindrome = obj.minInsertionPalindrome(X);
-        System.out.println("minInsertionPalindrome = " + minInsertionPalindrome);
+        MinDeletionPalindrome obj = new MinDeletionPalindrome();
+        int minDeletionPalindrome = obj.minDeletionPalindrome(X);
+        System.out.println("minDeletionPalindrome = " + minDeletionPalindrome);
     }
 
-    private int minInsertionPalindrome(String X) {
+    private int minDeletionPalindrome(String X) {
         return X.length() - lps(X);
     }
 

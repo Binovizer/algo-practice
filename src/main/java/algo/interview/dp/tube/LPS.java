@@ -1,22 +1,21 @@
-package algo.interview.dp;
+package algo.interview.dp.tube;
 
 /**
  * This is the description of what this type does
  *
  * @author Nadeem 2020-12-04
  */
-public class SCS {
+public class LPS {
 
     public static void main(String[] args) {
-        String X = "AGGTAB";
-        String Y = "GXTXAYB";
-        SCS scs = new SCS();
-        int shortestCommonSupersequence = scs.shortestCommonSupersequence(X, Y);
-        System.out.println("shortestCommonSupersequence = " + shortestCommonSupersequence);
+        String X = "agbcba";
+        LPS lps = new LPS();
+        int longestPalindromicSubsequence = lps.lps(X);
+        System.out.println("longestPalindromicSubsequence = " + longestPalindromicSubsequence);
     }
 
-    private int shortestCommonSupersequence(String X, String Y) {
-        return X.length() + Y.length() - lcs(X, Y);
+    private int lps(String X) {
+        return lcs(X, new StringBuilder(X).reverse().toString());
     }
 
     private int lcs(String X, String Y) {

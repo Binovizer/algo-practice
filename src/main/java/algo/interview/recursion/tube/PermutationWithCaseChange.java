@@ -1,8 +1,8 @@
 package algo.interview.recursion.tube;
 
 /**
- * This class helps generate permutations with case changes
- * Problem Desc : https://www.geeksforgeeks.org/permute-string-changing-case/
+ * This class helps generate permutations with case changes Problem Desc :
+ * https://www.geeksforgeeks.org/permute-string-changing-case/
  *
  * @author Nadeem 2020-11-22
  */
@@ -30,7 +30,7 @@ public class PermutationWithCaseChange {
      * @param out the output
      */
     private void generate(String in, String out) {
-        if(in.length() == 0){
+        if (in.length() == 0) {
             System.out.println(out);
             return;
         }
@@ -39,7 +39,7 @@ public class PermutationWithCaseChange {
         String out1 = out + currentChar;
         generate(in, out1);
         boolean isDigit = Character.isDigit(currentChar);
-        if(!isDigit){
+        if (!isDigit) {
             String out2 = out + getChangedCaseSymbol(currentChar);
             generate(in, out2);
         }
@@ -53,7 +53,7 @@ public class PermutationWithCaseChange {
      */
     private char getChangedCaseSymbol(char symbol) {
         char changedSymbol;
-        if(Character.isLowerCase(symbol)){
+        if (Character.isLowerCase(symbol)) {
             changedSymbol = Character.toUpperCase(symbol);
         } else {
             changedSymbol = Character.toLowerCase(symbol);

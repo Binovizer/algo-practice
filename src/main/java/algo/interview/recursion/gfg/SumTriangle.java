@@ -25,7 +25,7 @@ public class SumTriangle {
     /**
      * Sums the given array
      *
-     * @param arr   the array
+     * @param arr the array
      * @param index the index
      * @return the sum
      */
@@ -40,7 +40,7 @@ public class SumTriangle {
     /**
      * Shorten the array
      *
-     * @param arr   the array
+     * @param arr the array
      * @param index the index
      */
     private void shortenArray(int[] arr, int index) {
@@ -50,8 +50,8 @@ public class SumTriangle {
     /**
      * Shorten the array
      *
-     * @param arr   the array
-     * @param size  the size
+     * @param arr the array
+     * @param size the size
      * @param index the index
      */
     private void shortenArray(int[] arr, int size, int index) {

@@ -1,16 +1,13 @@
-package algo.interview.dp;
+package algo.interview.dp.tube;
 
 import algo.interview.utils.ArrayUtil;
 
 /**
- * This is similar to knapsack01 with the minor difference.
- * In this we can select the item multiple times
- * So, when we are not selecting any element we will not be selecting it again
- * but when we are selecting we can select it again
+ * This is the description of what this type does
  *
  * @author Nadeem 2020-11-29
  */
-public class UnboundedKnapsack {
+public class Knapsack01 {
 
     private static int[][] dp;
 
@@ -18,7 +15,7 @@ public class UnboundedKnapsack {
         int[] val = {60, 100, 120};
         int[] wt = {10, 20, 30};
         int W = 50;
-        UnboundedKnapsack knapsack = new UnboundedKnapsack();
+        Knapsack01 knapsack = new Knapsack01();
         int maxProfit = knapsack.knapsack(val, wt, W, val.length);
         System.out.println("maxProfit = " + maxProfit);
     }
@@ -32,10 +29,8 @@ public class UnboundedKnapsack {
             return 0;
         }
         if (wt[n - 1] <= W) {
-            // When Item is selected then don't reduce the size as the item can be selected again
-            // hence passed n again in the recursive call.
             return Math.max(
-                    val[n - 1] + knapsackRecursive(val, wt, W - wt[n - 1], n),
+                    val[n - 1] + knapsackRecursive(val, wt, W - wt[n - 1], n - 1),
                     knapsackRecursive(val, wt, W, n - 1));
         } else {
             return knapsackRecursive(val, wt, W, n - 1);
@@ -54,7 +49,7 @@ public class UnboundedKnapsack {
         if (wt[n - 1] <= W) {
             dp[n][W] =
                     Math.max(
-                            val[n - 1] + knapsackDP(val, wt, W - wt[n - 1], n),
+                            val[n - 1] + knapsackDP(val, wt, W - wt[n - 1], n - 1),
                             knapsackDP(val, wt, W, n - 1));
         } else {
             dp[n][W] = knapsackDP(val, wt, W, n - 1);
@@ -78,7 +73,7 @@ public class UnboundedKnapsack {
         for (int i = 1; i <= n; i++) {
             for (int j = 1; j <= W; j++) {
                 if (wt[i - 1] <= j) {
-                    dp[i][j] = Math.max(val[i - 1] + dp[i][j - wt[i - 1]], dp[i - 1][j]);
+                    dp[i][j] = Math.max(val[i - 1] + dp[i - 1][j - wt[i - 1]], dp[i - 1][j]);
                 } else {
                     dp[i][j] = dp[i - 1][j];
                 }

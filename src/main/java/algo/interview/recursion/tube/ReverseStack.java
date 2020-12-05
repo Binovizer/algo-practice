@@ -26,7 +26,7 @@ public class ReverseStack {
      * @param stack the stack
      */
     private void reverse(Stack<Integer> stack) {
-        if(stack.size() == 1){
+        if (stack.size() == 1) {
             return;
         }
         int remaining = stack.pop();
@@ -41,7 +41,7 @@ public class ReverseStack {
      * @param element the element
      */
     private void insertAtEnd(Stack<Integer> stack, int element) {
-        if(stack.size() == 0){
+        if (stack.size() == 0) {
             stack.push(element);
             return;
         }

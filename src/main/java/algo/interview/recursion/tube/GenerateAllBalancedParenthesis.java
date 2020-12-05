@@ -4,8 +4,8 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
- * This class helps generate all balanced parenthesis
- * Problem Desc : https://www.geeksforgeeks.org/print-all-combinations-of-balanced-parentheses/
+ * This class helps generate all balanced parenthesis Problem Desc :
+ * https://www.geeksforgeeks.org/print-all-combinations-of-balanced-parentheses/
  *
  * @author Nadeem 2020-11-22
  */
@@ -18,7 +18,8 @@ public class GenerateAllBalancedParenthesis {
 
     public static void main(String[] args) {
         int n = 3;
-        GenerateAllBalancedParenthesis generateAllBalancedParenthesis = new GenerateAllBalancedParenthesis();
+        GenerateAllBalancedParenthesis generateAllBalancedParenthesis =
+                new GenerateAllBalancedParenthesis();
         generateAllBalancedParenthesis.generate(n);
         System.out.println(balancedParenthesisList.size());
         System.out.println(balancedParenthesisList);

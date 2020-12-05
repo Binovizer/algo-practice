@@ -4,9 +4,9 @@ import static algo.interview.utils.ArrayUtil.generate2DSequentialCharArray;
 import static algo.interview.utils.ArrayUtil.print2DArray;
 
 /**
- * This class helps find the number of paths from top left to bottom right of a MxN matrix
- * with the constraints that from each cell you can either move to right or down.
- * Problem Description : https://practice.geeksforgeeks.org/problems/number-of-paths0926/1/
+ * This class helps find the number of paths from top left to bottom right of a MxN matrix with the
+ * constraints that from each cell you can either move to right or down. Problem Description :
+ * https://practice.geeksforgeeks.org/problems/number-of-paths0926/1/
  *
  * @author Nadeem 2020-11-23
  */
@@ -47,14 +47,13 @@ public class NumberOfPaths {
             System.out.println(out + in[i][j]);
             return;
         }
-        if (i < m-1) {
+        if (i < m - 1) {
             String op1 = out + in[i][j];
             printPaths(m, n, i + 1, j, in, op1);
         }
-        if (j < n-1) {
+        if (j < n - 1) {
             String op2 = out + in[i][j];
             printPaths(m, n, i, j + 1, in, op2);
         }
     }
-
 }

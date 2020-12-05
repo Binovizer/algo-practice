@@ -1,8 +1,8 @@
 package algo.interview.recursion.gfg;
 
 /**
- * This class decodes the string as per the given format
- * Problem Desc : https://practice.geeksforgeeks.org/problems/decode-the-string/0/
+ * This class decodes the string as per the given format Problem Desc :
+ * https://practice.geeksforgeeks.org/problems/decode-the-string/0/
  *
  * @author Nadeem 2020-11-23
  */

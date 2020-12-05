@@ -12,7 +12,6 @@ public class FirstBadVersion {
             } else {
                 start = mid + 1;
             }
-
         }
         return start;
     }
@@ -27,7 +26,5 @@ public class FirstBadVersion {
         return true;
     }
 
-    public static void main(String[] args) {
-
-    }
+    public static void main(String[] args) {}
 }
