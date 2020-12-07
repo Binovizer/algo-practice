@@ -9,6 +9,12 @@ import algo.interview.utils.ArrayUtil;
  */
 public class LCS {
 
+    private static int[][] dp = new int[100][100];
+
+    {
+        ArrayUtil.fill2DArray(dp, -1);
+    }
+
     public static void main(String[] args) {
         String s1 = "AGGTAB";
         String s2 = "GXTXAYB";
@@ -29,8 +35,6 @@ public class LCS {
     }
 
     private int lcsMemoized(String X, String Y, int n, int m) {
-        int[][] dp = new int[n + 1][m + 1];
-        ArrayUtil.fill2DArray(dp, -1);
         if (n == 0 || m == 0) {
             return 0;
         }

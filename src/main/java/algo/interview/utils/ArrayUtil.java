@@ -167,4 +167,18 @@ public class ArrayUtil {
             Arrays.fill(arr, val);
         }
     }
+
+    /**
+     * Fills 3D Array with the given value
+     *
+     * @param array the array
+     * @param val the val
+     */
+    public static void fill3DArray(int[][][] array, int val) {
+        for (int[][] twoDArr : array) {
+            for (int[] arr : twoDArr) {
+                Arrays.fill(arr, val);
+            }
+        }
+    }
 }
