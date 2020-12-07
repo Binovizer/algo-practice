@@ -19,7 +19,7 @@ public class ArrayUtil {
         System.out.println("::: Array :::");
         for (int[] ints : arr) {
             for (int anInt : ints) {
-                System.out.print(anInt + " ");
+                System.out.printf("%3d", anInt);
             }
             System.out.println();
         }
