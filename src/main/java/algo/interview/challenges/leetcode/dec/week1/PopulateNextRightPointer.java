@@ -1,4 +1,4 @@
-package algo.interview.challenges.leetcode.dec;
+package algo.interview.challenges.leetcode.dec.week1;
 
 import java.util.LinkedList;
 import java.util.Queue;

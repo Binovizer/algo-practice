@@ -1,4 +1,4 @@
-package algo.interview.challenges.leetcode.dec;
+package algo.interview.challenges.leetcode.dec.week1;
 
 import algo.interview.utils.ArrayUtil;
 

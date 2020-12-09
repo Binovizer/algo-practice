@@ -1,4 +1,4 @@
-package algo.interview.challenges.leetcode.dec;
+package algo.interview.challenges.leetcode.dec.week1;
 
 /**
  * This is the description of what this type does

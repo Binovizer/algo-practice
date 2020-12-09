@@ -1,4 +1,4 @@
-package algo.leetcode.challenge.may.week1;
+package algo.interview.challenges.leetcode.may.week1;
 
 public class RansomNote {
 
