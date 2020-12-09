@@ -14,7 +14,7 @@ public class HouseRobber {
     public static void main(String[] args) {
         int[] nums = {2, 7, 9, 3, 1};
         HouseRobber houseRobber = new HouseRobber();
-        int maxRobbery = houseRobber.robTopDown(nums);
+        int maxRobbery = houseRobber.robBottomUp(nums);
         System.out.println("maxRobbery = " + maxRobbery);
     }
 
@@ -50,7 +50,7 @@ public class HouseRobber {
         return dp[i] = Math.max(nums[i] + robMemoized(nums, i - 2), robMemoized(nums, i - 1));
     }
 
-    private int robTopDown(int[] nums) {
+    private int robBottomUp(int[] nums) {
         int n = nums.length;
         if (n == 0) {
             return 0;

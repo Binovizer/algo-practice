@@ -14,7 +14,7 @@ public class ClimbingStairs {
     public static void main(String[] args) {
         int n = 5;
         ClimbingStairs climbingStairs = new ClimbingStairs();
-        int distinctWays = climbingStairs.distinctWaysV2TopDown(n);
+        int distinctWays = climbingStairs.distinctWaysV2BottomUp(n);
         System.out.println("distinctWays = " + distinctWays);
     }
 
@@ -57,7 +57,7 @@ public class ClimbingStairs {
         return dp[n] = distinctWaysV2Memo(n - 1) + distinctWaysV2Memo(n - 2);
     }
 
-    private int distinctWaysV2TopDown(int n) {
+    private int distinctWaysV2BottomUp(int n) {
         int[] dp = new int[n + 1];
         dp[0] = 1;
         dp[1] = 1;

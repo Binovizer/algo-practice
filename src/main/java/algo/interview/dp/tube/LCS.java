@@ -19,7 +19,7 @@ public class LCS {
         String s1 = "AGGTAB";
         String s2 = "GXTXAYB";
         LCS lcs = new LCS();
-        int lcsLength = lcs.lcsTopDown(s1, s2, s1.length(), s2.length());
+        int lcsLength = lcs.lcsBottomUp(s1, s2, s1.length(), s2.length());
         System.out.println("lcsLength = " + lcsLength);
     }
 
@@ -49,7 +49,7 @@ public class LCS {
         return dp[n][m];
     }
 
-    private int lcsTopDown(String X, String Y, int n, int m) {
+    private int lcsBottomUp(String X, String Y, int n, int m) {
         int[][] dp = new int[n + 1][m + 1];
 
         for (int i = 0; i <= n; i++) {

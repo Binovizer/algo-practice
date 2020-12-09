@@ -21,7 +21,7 @@ public class Knapsack01 {
     }
 
     private int knapsack(int[] val, int[] wt, int W, int n) {
-        return knapsackDPTopDown(val, wt, W, n);
+        return knapsackDPBottomUp(val, wt, W, n);
     }
 
     private int knapsackRecursive(int[] val, int[] wt, int W, int n) {
@@ -57,7 +57,7 @@ public class Knapsack01 {
         return dp[n][W];
     }
 
-    private int knapsackDPTopDown(int[] val, int[] wt, int W, int n) {
+    private int knapsackDPBottomUp(int[] val, int[] wt, int W, int n) {
         dp = new int[n + 1][W + 1];
 
         // initialize dp

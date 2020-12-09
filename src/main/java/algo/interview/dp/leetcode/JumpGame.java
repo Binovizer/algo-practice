@@ -14,7 +14,7 @@ public class JumpGame {
     public static void main(String[] args) {
         int[] nums = {2, 3, 1, 1, 4};
         JumpGame jumpGame = new JumpGame();
-        boolean canReach = jumpGame.canReachTopDown(nums);
+        boolean canReach = jumpGame.canReachBottomUp(nums);
         System.out.println("canReach = " + canReach);
     }
 
@@ -60,7 +60,7 @@ public class JumpGame {
         return 0;
     }
 
-    private boolean canReachTopDown(int[] nums) {
+    private boolean canReachBottomUp(int[] nums) {
         int n = nums.length - 1;
         boolean[] dp = new boolean[n + 1];
         dp[n] = true;
