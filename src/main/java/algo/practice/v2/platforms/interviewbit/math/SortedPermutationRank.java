@@ -46,6 +46,7 @@ public class SortedPermutationRank {
         return ans + 1;
     }
 
+    // Not correct
     private int findRankWithRepeat(String str) {
         int n = str.length();
         factMemo = new int[n + 1];
