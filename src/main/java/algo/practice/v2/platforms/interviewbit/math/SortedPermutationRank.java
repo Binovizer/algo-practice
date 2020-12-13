@@ -9,6 +9,8 @@ import java.util.Arrays;
  */
 public class SortedPermutationRank {
 
+    private static final int M = 1000003;
+
     private int[] factMemo;
 
     public static void main(String[] args) {
@@ -46,38 +48,59 @@ public class SortedPermutationRank {
         return ans + 1;
     }
 
-    // Not correct
     private int findRankWithRepeat(String str) {
         int n = str.length();
         factMemo = new int[n + 1];
         Arrays.fill(factMemo, -1);
+
         int[] charMap = new int[26];
         for (char c : str.toCharArray()) {
             charMap[c - 'A']++;
         }
-        int ans = 0;
+
+        long denom = 1;
+        for (int value : charMap) {
+            if (factMemo[value] == -1) {
+                factMemo[value] = fact(value);
+            }
+            denom = (denom % M * modExp(factMemo[value], M - 2)) % M;
+        }
+        long ans = 0;
         int i = 0;
-        int curLen = n;
         while (i < n - 1) {
             char currentChar = str.charAt(i);
             int smallerCharsCount = 0;
             // find no of chars that are smaller than this char
-            int divisor = 1;
             for (int j = currentChar - 'A' - 1; j >= 0; j--) {
                 if (charMap[j] > 0) {
-                    if (factMemo[charMap[j]] == -1) {
-                        factMemo[charMap[j]] = fact(charMap[j]);
-                    }
-                    divisor *= factMemo[charMap[j]];
-                    smallerCharsCount++;
+                    smallerCharsCount += charMap[j];
                 }
             }
-            ans += (smallerCharsCount * (fact(curLen - 1) / divisor));
+            ans =
+                    (ans % M + (smallerCharsCount % M * (fact(n - i - 1) % M * denom % M) % M) % M)
+                            % M;
+            denom = (denom % M * charMap[currentChar - 'A'] % M) % M;
             charMap[currentChar - 'A']--;
             i++;
-            curLen--;
         }
-        return ans + 1;
+        return new Long(ans + 1).intValue();
+    }
+
+    public long modExp(long xint, long yint) {
+        long res = 1;
+        long x = xint;
+        long y = yint;
+        // System.out.println("Exp " + x + " " + y + " " + res);
+        while (y > 0) {
+            if ((y & 1) == 1) {
+                res = (res * x) % M;
+            }
+            x = (x * x) % M;
+            y >>= 1;
+            // System.out.println("Exp " + x + " " + y + " " + res);
+        }
+        // return new Long(res).intValue();
+        return res;
     }
 
     private int fact(int n) {
@@ -87,6 +110,6 @@ public class SortedPermutationRank {
         if (factMemo[n] != -1) {
             return factMemo[n];
         }
-        return factMemo[n] = n * fact(n - 1);
+        return factMemo[n] = (n % M * fact(n - 1) % M) % M;
     }
 }
