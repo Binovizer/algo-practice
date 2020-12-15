@@ -18,6 +18,8 @@ public class LetterCombinationsPhone {
 
     {
         digitToCharMap = new HashMap<>();
+        digitToCharMap.put(0, "0");
+        digitToCharMap.put(1, "1");
         digitToCharMap.put(2, "abc");
         digitToCharMap.put(3, "def");
         digitToCharMap.put(4, "ghi");
