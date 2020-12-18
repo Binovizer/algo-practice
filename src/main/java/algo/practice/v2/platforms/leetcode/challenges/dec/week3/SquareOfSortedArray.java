@@ -10,14 +10,32 @@ import java.util.Arrays;
 public class SquareOfSortedArray {
 
     public static void main(String[] args) {
-        int[] nums = {0, 1, 2, 3, 4};
+        int[] nums = {-4, -3, 0, 1, 2, 3, 4};
         SquareOfSortedArray square = new SquareOfSortedArray();
         int[] squares = square.sortedSquares(nums);
         System.out.println("squares = " + Arrays.toString(squares));
     }
 
     public int[] sortedSquares(int[] nums) {
-        return getSquaresTwoPointers(nums);
+        return getSquaresTwoPointersOptimized(nums);
+    }
+
+    private int[] getSquaresTwoPointersOptimized(int[] nums) {
+        int n = nums.length;
+        int[] squares = new int[n];
+        int start = 0;
+        int end = n - 1;
+        int k = n - 1;
+        while (start <= end) {
+            if (Math.abs(nums[start]) <= Math.abs(nums[end])) {
+                squares[k--] = nums[end] * nums[end];
+                end--;
+            } else {
+                squares[k--] = nums[start] * nums[start];
+                start++;
+            }
+        }
+        return squares;
     }
 
     private int[] getSquaresTwoPointers(int[] nums) {
