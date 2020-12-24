@@ -181,4 +181,57 @@ public class ArrayUtil {
             }
         }
     }
+
+    /**
+     * Swaps array elements at index i and j
+     *
+     * @param arr the array
+     * @param i the index
+     * @param j the index
+     */
+    public static void swapElements(int[] arr, int i, int j) {
+        int temp = arr[i];
+        arr[i] = arr[j];
+        arr[j] = temp;
+    }
+
+    /**
+     * Swaps array elements at index i and j
+     *
+     * @param arr the array
+     * @param i the index
+     * @param j the index
+     */
+    public static void swapElements(char[] arr, int i, int j) {
+        char temp = arr[i];
+        arr[i] = arr[j];
+        arr[j] = temp;
+    }
+
+    /**
+     * Reverses the array from index i to j (both inclusive)
+     *
+     * @param arr the array
+     * @param from the from index
+     * @param to the to index
+     */
+    public static void reverse(char[] arr, int from, int to) {
+        while (from < to) {
+            char temp = arr[from];
+            arr[from] = arr[to];
+            arr[to] = temp;
+            from++;
+            to--;
+        }
+    }
+
+    /**
+     * Reverses the array from index i to j (both inclusive)
+     *
+     * @param arr the array
+     * @param from the from index
+     */
+    public static void reverse(char[] arr, int from) {
+        reverse(arr, from, arr.length - 1);
+    }
 }
