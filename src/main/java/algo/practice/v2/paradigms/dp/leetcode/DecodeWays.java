@@ -33,7 +33,7 @@ public class DecodeWays {
         int op1 = noOfWays(str.substring(1));
         int op2 = 0;
         int num = Integer.parseInt(str.substring(0, 2));
-        if (num <= 26) {
+        if (num >= 10 && num <= 26) {
             op2 = noOfWays(str.substring(2));
         }
         return op1 + op2;
@@ -53,7 +53,7 @@ public class DecodeWays {
         int op1 = noOfWaysMemo(in1);
         int num = Integer.parseInt(str.substring(0, 2));
         int op2 = 0;
-        if (num <= 26) {
+        if (num >= 10 && num <= 26) {
             String in2 = str.substring(2);
             op2 = noOfWaysMemo(in2);
         }
