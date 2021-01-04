@@ -17,7 +17,7 @@ public class ListNode {
 
     public String printForward() {
         if (next != null) {
-            return val + "->" + next.printForward();
+            return val + " -> " + next.printForward();
         } else {
             return ((Integer) val).toString();
         }
