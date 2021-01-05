@@ -61,8 +61,8 @@ public class Knapsack01 {
         dp = new int[n + 1][W + 1];
 
         // initialize dp
-        for (int i = 0; i < dp.length; i++) {
-            for (int j = 0; j < dp[i].length; j++) {
+        for (int i = 0; i <= n; i++) {
+            for (int j = 0; j <= W; j++) {
                 if (i == 0 || j == 0) {
                     dp[i][j] = 0;
                 }
