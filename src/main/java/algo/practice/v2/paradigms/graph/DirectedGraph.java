@@ -14,4 +14,9 @@ public class DirectedGraph extends Graph {
     public void addEdge(int u, int v) {
         super.getAdjList().get(u).add(v);
     }
+
+    @Override
+    public void addWeightedEdge(int u, int v, int w) {
+        super.getAdjMatrix()[u][v] = w;
+    }
 }
