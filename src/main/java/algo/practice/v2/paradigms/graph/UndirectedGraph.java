@@ -15,4 +15,10 @@ public class UndirectedGraph extends Graph {
         super.getAdjList().get(u).add(v);
         super.getAdjList().get(v).add(u);
     }
+
+    @Override
+    public void addWeightedEdge(int u, int v, int w) {
+        super.getAdjMatrix()[u][v] = w;
+        super.getAdjMatrix()[v][u] = w;
+    }
 }
