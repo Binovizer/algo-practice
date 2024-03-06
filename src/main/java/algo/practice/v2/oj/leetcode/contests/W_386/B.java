@@ -3,8 +3,9 @@ package algo.practice.v2.oj.leetcode.contests.W_386;
 /**
  * The type B
  *
- * <p><a
- * href="https://leetcode.com/contest/weekly-contest-386/problems/find-the-largest-area-of-square-inside-two-rectangles/">...</a>
+ * <p>
+ *     <a href="https://leetcode.com/contest/weekly-contest-386/problems/find-the-largest-area-of-square-inside-two-rectangles/">Problem Link</a>
+ * </p>
  *
  * @author nadeem Date : 27/02/24
  */
