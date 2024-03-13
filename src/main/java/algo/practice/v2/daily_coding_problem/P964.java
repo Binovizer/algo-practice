@@ -1,5 +1,10 @@
 package algo.practice.v2.daily_coding_problem;
 
+/**
+ * The type P963
+ *
+ * @author nadeem Date : 14/03/24
+ */
 public class P964 {
     private final int[] orderIds; // Array to store order IDs
     private int currentIndex; // Current index for the next order ID
