@@ -10,4 +10,8 @@ public class StringUtil {
     public static String repeatString(String str, int times) {
         return new String(new char[times]).replace("\0", str);
     }
+
+    public static boolean isEmpty(String str) {
+        return str == null || str.isEmpty();
+    }
 }
